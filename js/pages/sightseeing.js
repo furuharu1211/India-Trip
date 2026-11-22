@@ -56,7 +56,7 @@
         if(frames.childElementCount){if(frames.childElementCount>1){frames.classList.add("is-gallery");frames.tabIndex=0;frames.setAttribute("aria-label",title+"の写真（横スクロール）");}card.append(frames);}
         const body=el("div","place-body");
         body.append(el("h3","",title));
-        images.forEach(photo=>{if(!photo||typeof photo!=="object")return; if(photo.note)body.append(el("p","place-description",photo.note)); if(photo.source&&photo.author){const credit=el("p","place-description");credit.style.fontSize="0.75rem";credit.append(document.createTextNode("画像："));const a=el("a","",photo.author+" / Wikimedia Commons");a.href=photo.source;a.target="_blank";a.rel="noopener noreferrer";credit.append(a,document.createTextNode(" · "));const l=el("a","",photo.credit||"License");l.href=photo.license;l.target="_blank";l.rel="noopener noreferrer";credit.append(l);body.append(credit);}});
+        images.forEach(photo=>{if(photo?.note)body.append(el("p","place-description",photo.note));});
         if(spot.description)body.append(el("p","place-description",spot.description));
         const buttons=el("div","place-buttons");
         const query=typeof spot.mapQuery==="string"?spot.mapQuery.trim():"";
