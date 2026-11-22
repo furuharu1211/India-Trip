@@ -1,0 +1,7 @@
+/* 共通テーマに合わせたシンプルなメモカード */
+.memo-stack{display:grid;gap:var(--card-gap)}
+.memo-card{padding:var(--card-padding)}
+.memo-title{margin:0 0 8px;font-size:1.25rem;line-height:1.5}
+.memo-text{margin:0;color:var(--muted);font-size:var(--body-size);white-space:pre-line}
+.memo-links{display:grid;gap:8px;margin-top:16px}
+@media(max-width:340px){.memo-card{padding:16px}}
