@@ -8,7 +8,7 @@
   const page=pages.find(p=>p.id===current)||pages[0];
   const themes=["classic","ocean","nature","urban","warm","luxury"];
   document.documentElement.dataset.theme=themes.includes(c.theme)?c.theme:"classic";
-  document.title=page.label+" | "+(c.subtitle||c.title);
+  document.title=page.label+" | "+(c.siteTitle||c.subtitle||c.title);
   document.querySelector('meta[name="description"]').content=(c.title||"旅行")+"の情報共有サイト";
   ui.mount(c,current);
   if(current!=="index"){

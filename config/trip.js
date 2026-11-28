@@ -1,6 +1,7 @@
 window.TRIP_CONFIG = {
   "id": "india-2027",
   "title": "エンカレインド支部",
+  "siteTitle": "India Trip",
   "subtitle": "encourage-india-trip",
   "startDate": "2027-02-19",
   "endDate": "2027-02-24",
