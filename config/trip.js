@@ -28,6 +28,6 @@ window.TRIP_CONFIG = {
     "hotel": true,
     "belongings": true,
     "members": true,
-    "memo": true
+    "memo": false
   }
 };
